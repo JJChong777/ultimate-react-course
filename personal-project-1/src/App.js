@@ -45,7 +45,6 @@ export default function App() {
   );
 
   function handleSelectToy(toy) {
-    setSelectToy(null);
     setSelectToy((cur) => (cur?.id === toy?.id ? null : toy));
     setSelectCart(false);
   }
