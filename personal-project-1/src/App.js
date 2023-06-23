@@ -98,7 +98,13 @@ export default function App() {
           onSelectCart={handleSelectCart}
         />
       </div>
-      {selectToy && <ToyPage toy={selectToy} addToyToCart={addToyToCart} />}
+      {selectToy && (
+        <ToyPage
+          toy={selectToy}
+          addToyToCart={addToyToCart}
+          key={selectToy.id}
+        />
+      )}
       {selectCart && (
         <CartPage
           shoppingCart={shoppingCart}
