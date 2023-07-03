@@ -11,6 +11,12 @@
   gap: 2rem;
 }
 
+/* implementing the fix to prevent the ugly scrollbar */
+.city::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
+}
+
 .row {
   display: flex;
   flex-direction: column;
